@@ -1,0 +1,29 @@
+Algoritmo ECUACION_DE_SEGUNDO_GRADO
+	Escribir 'ECUACION DE LA FORMA a*x*x+b*x+c'
+	Escribir 'anota el valor de a'
+	Leer a
+	Escribir 'anota el valor de b'
+	Leer b
+	Escribir 'anota el valor de c'
+	Leer c
+	discri <- b*b-4*a*c
+	Escribir 'la discrimante es=',discri
+	Si discri>0 Entonces
+		x1 <- (-b+rc(b*b-4*a*c))/2*a
+		x2 <- (-b-rc(b*b-4*a*c))/2*a
+		Escribir 'las respuestas son reales'
+		Escribir 'la solucion a respuesta x1=',x1
+		Escribir 'la solucion a respuesta x2=',x2
+	FinSi
+	Si discri=0 Entonces
+		x1 <- (-b+rc(b*b-4*a*c))/2*a
+		Escribir 'las raizes son iguales'
+		Escribir 'la solucion de x1y de x2 es=',x1
+	FinSi
+	Si discri<0 Entonces
+		Escribir 'la solucion no pertenece al campo de los reales o son imaginarias'
+	FinSi
+	Si a=0 Entonces
+		Escribir 'la solucion es una indeterminacion'
+	FinSi
+FinAlgoritmo
