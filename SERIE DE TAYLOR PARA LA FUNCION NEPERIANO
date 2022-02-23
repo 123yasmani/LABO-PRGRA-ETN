@@ -1,0 +1,17 @@
+Algoritmo LA_SERIE_DE_TAYLOR_DE_LA_FUNCION_e
+	Escribir 'la serie de taylor de la funcion e^x'
+	Escribir 'introducir el valor de n:'
+	Leer m
+	Escribir 'introducir el valor de x'
+	Leer x
+	neperiano <- 2.7182818281
+	Para n<-1 Hasta m Hacer
+		f <- 1
+		r <- n
+		Para i<-1 Hasta r Hacer
+			f <- f*i
+		FinPara
+		neperiano <- neperiano+2.7182818281*(x-1)^r/f
+	FinPara
+	Escribir 'la RESPUESTA es:',neperiano
+FinAlgoritmo
